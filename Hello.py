@@ -34,14 +34,14 @@ def process_dataframe(xls_path):
 
 def run():
     st.set_page_config(
-        page_title="Hello",
+        page_title="Desembolsos",
         page_icon="👋",
     )
 
-    st.write("# Welcome to Streamlit! 👋")
+    st.write("Bienvenido aquí analizaremos tus Datos! 👋")
 
     # Load the Excel file using Streamlit
-    uploaded_file = st.file_uploader("Choose an Excel file", type="xlsx")
+    uploaded_file = st.file_uploader("Carga tu Excel", type="xlsx")
     if uploaded_file:
         result_df = process_dataframe(uploaded_file)
         st.write(result_df)
